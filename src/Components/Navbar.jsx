@@ -19,6 +19,11 @@ const Navbar = () => {
                     ? "underline font-semibold bg-gradient-to-r from-green-800 to-cyan-700 bg-clip-text text-transparent " // Active link styles
                     : "text-black"
             }>About</NavLink>
+            <NavLink to="/contact" className={({ isActive }) =>
+                isActive
+                    ? "underline font-semibold bg-gradient-to-r from-green-800 to-cyan-700 bg-clip-text text-transparent " // Active link styles
+                    : "text-black"
+            }>Contact</NavLink>
         </>
     )
 
@@ -50,7 +55,7 @@ const Navbar = () => {
                     <NavLink to="/" className="pointer text-2xl font-bold bg-gradient-to-r from-green-800 to-cyan-700 bg-clip-text text-transparent">Mr.Murad Hossain</NavLink>
                 </div>
                 <div className="navbar-center hidden lg:flex ">
-                    <ul className="menu menu-horizontal px-1 gap-16">
+                    <ul className="menu menu-horizontal px-1 gap-8">
                         {navlink}
                     </ul>
                 </div>
