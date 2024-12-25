@@ -6,7 +6,7 @@ const About = () => {
         <div >
             <div className='w-10/12 mx-auto mt-5'>
             <h1 className='text-center font-bold my-3 text-2xl'>About</h1>
-            <div className="card lg:card-side bg-base-100 shadow-xl">
+            <div className="card lg:card-side bg-base-100 border">
                 <figure>
                     <img
                         src="https://i.ibb.co.com/pjbMktY/me.jpg"
@@ -41,7 +41,8 @@ const About = () => {
             <div>
                 <footer className="footer footer-center bg-base-300 text-base-content p-4 bottom-0">
                     <aside>
-                        <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+                        <p>Copyright © {new Date().getFullYear()} - All right reserved by Murad</p>
+                        <p className='text-xs text-slate-500'>Designed by Shahidul Islam</p>
                     </aside>
                 </footer>
             </div>
